@@ -5,6 +5,7 @@ import CartWidget from "../components/cartwidget"
 
 function navbar () {
     return (
+        <div className="header">
         <div className='nav'>
             <a href="#"><img src= {larola} id="logo-rola"  alt="logo.rola" /></a>
                 <div className='nav-links'>
@@ -13,7 +14,8 @@ function navbar () {
                     <a href="#">Coleccion</a>
                     <a href="#"><CartWidget/></a>
                 </div>
-        </div> 
+        </div>
+        </div>
     )
 }
 
