@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <ItemListContainer></ItemListContainer>
+      <ItemListContainer titulos = "Nuestros Diseños" ></ItemListContainer>
     </>
   )
 }
