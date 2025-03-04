@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ItemListContainer({titulos}) {
+function ItemListContainer({tituloPrincipal}) {
     return (
         <div>
-            <h1 className='Primer-Titulo'>{titulos}</h1>
+            <h1 className='Primer-Titulo'>{tituloPrincipal}</h1>
         </div>
     );
 }

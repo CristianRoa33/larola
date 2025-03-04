@@ -10,7 +10,7 @@ function navbar () {
                 <div className='nav-links'>
                     <a href="#">Mujer</a>
                     <a href="#">Hombre</a>
-                    <a href="#">Colecciones</a>
+                    <a href="#">Coleccion</a>
                     <a href="#"><CartWidget/></a>
                 </div>
         </div> 
