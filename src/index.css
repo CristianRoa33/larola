@@ -43,8 +43,9 @@ body{
   text-decoration: none;
 }
 #logo-rola {
-  width: 20%;
+  width: 15%;
   margin-left:200px;
+  border-radius: 50%;
   mask-image: linear-gradient(#0E2130 80% , transparent 100%) ;
   opacity: 0.8;
 }
