@@ -5,9 +5,9 @@
 }
 
 body{
-    background-color: #111927;
+  background-color: #111927;
     background-image: 
-        radial-gradient(at 47% 33%, hsl(274.25, 56.99999999999999%, 37%) 0, transparent 59%), 
+        radial-gradient(at 47% 33%, hsl(187.92, 90%, 46%) 0, transparent 59%), 
         radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
 
@@ -31,7 +31,7 @@ body{
   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
   position: relative;
   margin: 1px 200px;
-  backdrop-filter: blur(1px) saturate(150%);
+  backdrop-filter: blur(1px) saturate(200%);
 }
 
 .nav-links {
