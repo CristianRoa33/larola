@@ -5,8 +5,13 @@
 }
 
 body{
-  background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(0,212,255,1) 35%, rgba(0,0,0,0.7175245098039216) 100%);
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(274.25, 56.99999999999999%, 37%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
+
+
 
 .header{
   display: flex;
@@ -16,7 +21,7 @@ body{
 }
 
 .nav{
-  background-color: rgba(14, 33, 48, 0.75);
+  background-color: rgba(17, 25, 40, 0);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -26,6 +31,7 @@ body{
   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
   position: relative;
   margin: 1px 200px;
+  backdrop-filter: blur(1px) saturate(150%);
 }
 
 .nav-links {
