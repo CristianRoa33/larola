@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <ItemListContainer tituloPrincipal = "LO MEJOR EN CAMISETAS" ></ItemListContainer>
+      <ItemListContainer></ItemListContainer>
     </>
   )
 }
