@@ -1,21 +1,25 @@
 import React, { } from 'react';
 import  { useState, useEffect } from 'react';
 import ItemList from './itemlist';
-import Items from './item';
 import Item from './item';
+import { useParams } from 'react-router';
 
 function ItemListContainer() {
-    const [Items, setItems] = useState([]); 
+    const [Productos, setProductos] = useState([]); 
+    const{producto} = useParams();
+    console.log(producto);
 useEffect(() => {
-    const fetchItems = async () => {
-        const response = await fetch('https://dummyjson.com/products');
-        const Items = await response.json();
-        setItems(Items.products);
-    };
-    fetchItems();
+    fetch('https://dummyjson.com/products')
+    .then(res => res.json())
+    .then(res => setProductos(res.products));
 },  []);
+
+//fetch(`https://dummyjson.com/products/category/${} `)
+//.then(res => res.json())
+//.then(console.log);
+
 return (
-    <ItemList Items={Items} />
+    <ItemList Productos={Productos} />
 );
 }
 

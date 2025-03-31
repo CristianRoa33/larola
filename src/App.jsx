@@ -1,16 +1,20 @@
 import './App.css'
-import Navbar from './components/navbar'
+import NavBar from './components/navbar'
 import ItemListContainer from './components/itemlistcontainer'
+import { BrowserRouter,Routes,Route } from 'react-router'
 
 
 function App() {
 
 
   return (
-    <>
-      <Navbar></Navbar>
-      <ItemListContainer></ItemListContainer>
-    </>
+    <BrowserRouter>
+      <NavBar></NavBar>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>}></Route>
+        <Route path='/category/:producto' element={<ItemListContainer/>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

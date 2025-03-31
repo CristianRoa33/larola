@@ -6,10 +6,8 @@ function Item ({item}) {
             <div className="item-card">
                 <img src={item.thumbnail} alt={item.title} />
                 <h2>{item.title}</h2>
-                <p>${item.price}</p>
-                <p>{item.description}</p>
                 <p>{item.category}</p>
-                <button>Agregar a Carrito</button>
+                <button>Ver mas</button>
             </div>
     </div>
     );
