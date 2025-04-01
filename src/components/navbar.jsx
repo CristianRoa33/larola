@@ -25,6 +25,7 @@ function NavBar () {
           <Nav className="me-auto">
             {slicedCategorys.map(cat=> <Nav.Link to={`/category/${cat}`} as={NavLink} key={cat}>{cat}</Nav.Link>)}
           </Nav>
+          <CartWidget/>
         </Container>
       </Navbar>
     )
