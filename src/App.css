@@ -6,3 +6,20 @@
   text-align:justify;
 }
 
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px; 
+  padding: 20px;  
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2); /* Color blanco con transparencia */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde con transparencia */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

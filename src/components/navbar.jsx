@@ -1,10 +1,11 @@
 import React, {useState , useEffect} from "react"
 import larola from "../assets/larola.png"
-import CartWidget from "./cartwidget"
+import CartWidget from "./CartWidget"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from "react-router";
+import styles from "../components/NavBar.module.css"
 
 
 
@@ -19,10 +20,10 @@ function NavBar () {
     const slicedCategorys = Categorys.slice(0,4)
 
     return (
-        <Navbar bg="dark" data-bs-theme="dark">
+        <Navbar className={styles.Navbar}>
         <Container>
-          <Navbar.Brand href="/" as={Nav.Link}> <img src={larola} id="logo-rola" alt="logo-rola" /></Navbar.Brand>
-          <Nav className="me-auto">
+          <Navbar.Brand href="/" as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Navbar.Brand>
+          <Nav className={styles.links}>
             {slicedCategorys.map(cat=> <Nav.Link to={`/category/${cat}`} as={NavLink} key={cat}>{cat}</Nav.Link>)}
           </Nav>
           <CartWidget/>

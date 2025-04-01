@@ -1,0 +1,32 @@
+.Navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #0E2130;
+border: 1px solid #0E2130;
+font-family: "Roboto", sans-serif;
+font-size: 60x;
+border-radius: 10px;
+backdrop-filter: blur(1px) saturate(200%);
+position: relative;
+margin: 0px;
+box-shadow: 0 15px 25px rgba(236, 221, 221, 0.2);
+}
+
+.links {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    display: flex;
+    gap: 65px;
+    color: #fff;
+}
+
+.larola {
+    width: 40%;
+    margin-left:20px;
+    border-radius: 50%;
+    mask-image: linear-gradient(#0E2130 80% , transparent 100%) ;
+    opacity: 0.8;
+}
