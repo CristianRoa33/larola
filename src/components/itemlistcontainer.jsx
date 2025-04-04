@@ -1,8 +1,9 @@
 import React, { } from 'react';
 import  { useState, useEffect } from 'react';
 import ItemList from './itemlist';
-import Item from './item';
+import Item from './Item';
 import { useParams } from 'react-router';
+
 
 function ItemListContainer() {
     const [Productos, setProductos] = useState([]); 
@@ -23,7 +24,7 @@ if(producto){
 },  [producto]);
 
 return (
-    <ItemList Productos={Productos} />
+    <ItemList  Productos={Productos} />
 );
 }
 
