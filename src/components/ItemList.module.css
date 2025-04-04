@@ -6,3 +6,11 @@
     padding: 20px;  
     width: 18rem;
 }
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0 0 50px;
+    text-decoration: underline;
+}

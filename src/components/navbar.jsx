@@ -4,7 +4,7 @@ import CartWidget from "./CartWidget"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 import styles from "../components/NavBar.module.css"
 
 
@@ -24,7 +24,7 @@ function NavBar () {
         <Container>
           <Navbar.Brand href="/" as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Navbar.Brand>
           <Nav className={styles.links}>
-            {slicedCategorys.map(cat=> <Nav.Link to={`/category/${cat}`} as={NavLink} key={cat}>{cat}</Nav.Link>)}
+            {slicedCategorys.map(cat=> <Link  className={styles.link}to={`/category/${cat}`} as={Link} key={cat}>{cat}</Link>)}
           </Nav>
           <CartWidget/>
         </Container>

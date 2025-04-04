@@ -1,5 +1,6 @@
 
 .tarjeta {
+        font-family: 'Roboto', sans-serif;
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(5px); 
         border-radius: 10px; 
@@ -30,7 +31,7 @@
 }
 
 .titulo1 {
-        font-size: 20px;
+        font-size: 18px;
         color: #333; 
         margin-bottom: 15px;
 }
