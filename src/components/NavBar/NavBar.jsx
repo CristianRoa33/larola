@@ -20,7 +20,7 @@ function NavBar () {
     return (
         <Navbar className={styles.Navbar}>
             <Container> 
-                <Navbar.Brand link rel href="/"   as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Navbar.Brand>
+                <Link to= "/" as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Link>
                 <Nav className={styles.links}>
                     {slicedCategorys.map(cat=> <Link  className={styles.link}to={`/category/${cat}`} as={Link} key={cat}>{cat}</Link>)}
                 </Nav>

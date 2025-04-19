@@ -8,8 +8,8 @@ font-family: "Roboto", sans-serif;
 font-size: 60x;
 backdrop-filter: blur(1px) saturate(200%);
 position: relative;
-margin: 0px;
-box-shadow: 0 15px 25px rgba(238, 236, 236, 0.74);
+margin: 0px; 
+box-shadow: 0 15px 25px rgba(31, 157, 161, 0.74);
 }
 
 .links {
@@ -18,15 +18,16 @@ box-shadow: 0 15px 25px rgba(238, 236, 236, 0.74);
     font-weight: 100;
     display: flex;
     gap: 65px;
-    color: #fff;
+    color: #31A2B6;
     text-decoration: none;
     gap: 50px;
-    margin: 2px 100px 100px;
+    margin: 8px;
+    margin-left: 100px;
 }
 
 .larola {
-    width: 30%;
-    margin-left:20px;
+    width: 20%;
+    margin-left:100px;
     border-radius: 50%;
     mask-image: linear-gradient(#0E2130 80% , transparent 100%) ;
     opacity: 0.8;
@@ -40,6 +41,6 @@ box-shadow: 0 15px 25px rgba(238, 236, 236, 0.74);
 }
 
 .link:hover {
-    color: #50CBB3;
+    color: #31A2B6;
     text-decoration: underline;
 }

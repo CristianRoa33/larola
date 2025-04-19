@@ -9,7 +9,7 @@ import styles from "./Item.module.css"
 function Item ({item}) {
     return (
         <div className={styles.tarjeta}>
-          <img src={item.thumbnail} alt="" />
+          <img src={item.thumbnail} className= {styles.images}alt="Imagenes" />
           <div className={styles.bodycard}>
             <h1 className={styles.titulo1}>{item.title}</h1>
             <h2 className={styles.titulo2}>{item.category}</h2>

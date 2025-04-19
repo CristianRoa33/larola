@@ -6,7 +6,7 @@
 body{
   background-color: #111927;
     background-image: 
-        radial-gradient(at 47% 33%, hsl(180, 9%, 98%) 0, transparent 55%), 
-        radial-gradient(at 82% 65%, hsl(184, 77%, 46%) 0, transparent 100%);
+        radial-gradient(at 47% 33%, hsl(0, 0%, 100%) 0, transparent 55%), 
+        radial-gradient(at 82% 65%, hsl(0, 0%, 100%) 0, transparent 100%);
 }
 
