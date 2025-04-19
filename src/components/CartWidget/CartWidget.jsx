@@ -1,6 +1,6 @@
 import React from "react"
-import cart from "../assets/cart.png"
-import styles from "../components/CartWidget.module.css"
+import cart from "../../assets/cart.png"
+import styles from "./CartWidget.module.css"
 
 function CartWidget () {
     return (

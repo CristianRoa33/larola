@@ -1,11 +1,11 @@
 import React, {useState , useEffect} from "react"
-import larola from "../assets/larola.png"
+import larola from "../../assets/larola.png"
 import CartWidget from "../CartWidget/CartWidget"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router";
-import styles from "../components/NavBar.module.css"
+import styles from "./NavBar.module.css"
 
 
 
