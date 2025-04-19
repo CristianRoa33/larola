@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCount from "./Itemcount";
+import ItemCount from "../ItemCount/Itemcount";
 import styles from "./ItemDetail.module.css";
 
 function ItemDetail ({Detalle}) {

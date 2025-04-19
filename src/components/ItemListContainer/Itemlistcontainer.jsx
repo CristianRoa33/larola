@@ -1,8 +1,8 @@
 import React, { } from 'react';
 import  { useState, useEffect } from 'react';
-import ItemList from './itemlist';
+import ItemList from './ItemList/itemList';
 import { useParams } from 'react-router';
-import Item from './Item';
+import Item from './Item/Item';
 
 
 function ItemListContainer() {
