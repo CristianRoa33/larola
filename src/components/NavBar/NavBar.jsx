@@ -16,19 +16,17 @@ function NavBar () {
         .then(res => res.json())
         .then(cat => setCategorys(cat));
     },  []);
-
     const slicedCategorys = Categorys.slice(0,4)
-
     return (
         <Navbar className={styles.Navbar}>
-        <Container>
-          <Navbar.Brand href="/" as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Navbar.Brand>
-          <Nav className={styles.links}>
-            {slicedCategorys.map(cat=> <Link  className={styles.link}to={`/category/${cat}`} as={Link} key={cat}>{cat}</Link>)}
-          </Nav>
-          <CartWidget/>
-        </Container>
-      </Navbar>
+            <Container> 
+                <Navbar.Brand link rel href="/"   as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Navbar.Brand>
+                <Nav className={styles.links}>
+                    {slicedCategorys.map(cat=> <Link  className={styles.link}to={`/category/${cat}`} as={Link} key={cat}>{cat}</Link>)}
+                </Nav>
+                <CartWidget/>
+            </Container>
+        </Navbar>
     )
 }
 

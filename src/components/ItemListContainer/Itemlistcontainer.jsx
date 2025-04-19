@@ -8,7 +8,6 @@ import ItemList from '../ItemList/itemList';
 function ItemListContainer() {
     const [Productos, setProductos] = useState([]); 
     const{producto} = useParams();
-
 useEffect(() => {
     const Inventario = 'https://dummyjson.com/products'
     const ProductoPorCategory=`https://dummyjson.com/products/category/${producto} `
@@ -21,8 +20,7 @@ if(producto){
     .then(res => res.json())
     .then(res => setProductos(res.products));
 }
-},  [producto]);
-
+},[producto]);
 return (
     <ItemList  Productos={Productos} />
 );
