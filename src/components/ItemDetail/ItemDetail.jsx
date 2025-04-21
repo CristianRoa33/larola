@@ -11,7 +11,7 @@ function ItemDetail ({Detalle}) {
         <h3>{Detalle?.description}</h3>
         <p>{Detalle?.category}</p>
         <p>${Detalle?.price}</p>
-        <ItemCount/>
+        <ItemCount product= {Detalle}/>
     </div>
     )
 }
