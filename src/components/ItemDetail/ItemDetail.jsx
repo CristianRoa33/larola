@@ -6,11 +6,11 @@ function ItemDetail ({Detalle}) {
     return(
         <div className={styles.container}>
         <h1>Detalle del Producto</h1>
-        <img src={Detalle?.thumbnail}  className= {styles.thumbnail} alt="Detalle?.title" />
-        <h2>{Detalle?.title}</h2>
-        <h3>{Detalle?.description}</h3>
-        <p>{Detalle?.category}</p>
-        <p>${Detalle?.price}</p>
+        <img src={Detalle?.imagen}  className= {styles.imagen} alt="Detalle?.title" />
+        <h2>{Detalle?.Titulo}</h2>
+        <h3>{Detalle?.Descripcion}</h3>
+        <p>{Detalle?.Categoria}</p>
+        <p>${Detalle?.Precio}</p>
         <ItemCount product= {Detalle}/>
     </div>
     )

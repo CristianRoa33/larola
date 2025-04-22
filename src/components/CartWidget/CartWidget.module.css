@@ -1,11 +1,11 @@
 .cartimage{
     width: 10%;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .cuenta {
     font-size: 18px;
     color: #4AC5BA;
     position: absolute;
-    top: 40px;
+    top: 50px;
 }

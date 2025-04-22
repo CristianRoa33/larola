@@ -3,14 +3,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 5px; 
 }
-
-
 .cart {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(5px); 
     border-radius: 10px; 
     text-align: center;
@@ -21,26 +19,50 @@
     font-family: 'Roboto', sans-serif;
     list-style: non
 }
-
-
-
-.title {
-    font-size: 24px;
+.Titulo {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 16px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
 }
-
-.thumbnail {
-    width: 60%;
+.Categoria {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin: 10px;
+    color: #5a6161;
+}
+.Precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin: 10px;
+    color: #030c0c;
+}
+.imagen {
+    width: 50%;
+    margin: 50px;
 }
 
 .eliminar {
     width: 50%;
-        margin:10px;
-        cursor: pointer;
+    margin:10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid rgba(10, 10, 10, 0.158);
 }
 
 .eliminar:hover {
     background-color: #31A2B6;
     color: #fff;
+}
+
+.vacio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0 0 50px;
+    text-decoration: underline;
 }

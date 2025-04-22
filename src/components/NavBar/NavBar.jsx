@@ -1,4 +1,3 @@
-import React, {useState , useEffect} from "react"
 import larola from "../../assets/larola.png"
 import CartWidget from "../CartWidget/CartWidget"
 import Container from 'react-bootstrap/Container';
@@ -9,25 +8,23 @@ import styles from "./NavBar.module.css"
 
 
 
-function NavBar () {
-    const [Categorys, setCategorys] = useState ([]);
-    useEffect (() => {
-        fetch('https://dummyjson.com/products/category-list')
-        .then(res => res.json())
-        .then(cat => setCategorys(cat));
-    },  []);
-    const slicedCategorys = Categorys.slice(0,4)
-    return (
-        <Navbar className={styles.Navbar}>
-            <Container> 
-                <Link to= "/" as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Link>
-                <Nav className={styles.links}>
-                    {slicedCategorys.map(cat=> <Link  className={styles.link}to={`/category/${cat}`} as={Link} key={cat}>{cat}</Link>)}
-                </Nav>
-                <CartWidget/>
-            </Container>
-        </Navbar>
-    )
-}
+    function NavBar () {
+        return (
+            <Navbar className={styles.Navbar}>
+                <Container> 
+                    <Link to= "/" as={Nav.Link}> <img src={larola} className={styles.larola} alt="logo-rola" /></Link>
+                    <Nav className={styles.links}>
+                        <Link to= "/Categoria/Camisetas" as={Nav.Link} className={styles.links}>Camisetas</Link>
+                        <Link to= "/Categoria/Gorras" as={Nav.Link} className={styles.links}>Gorras</Link>
+                        <Link to= "/Categoria/Pantalonetas" as={Nav.Link} className={styles.links}>Pantalonetas</Link>
+                        <Link to= "/Categoria/Lociones" as={Nav.Link} className={styles.links}>Lociones</Link>
+                    </Nav>
+                    <CartWidget/>
+                </Container>
+            </Navbar>
+        )
+    }
+
+    
 
 export default NavBar

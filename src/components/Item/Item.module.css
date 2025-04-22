@@ -1,7 +1,7 @@
 
 .tarjeta {
         font-family: 'Roboto', sans-serif;
-        background-color: rgb(253, 253, 253);
+        background-color: rgb(255, 255, 255);
         backdrop-filter: blur(5px); 
         border-radius: 10px; 
         padding: 20px;
@@ -11,12 +11,12 @@
         transition: background-color 0.3s ease;
 }
 
-.images {
-        clip-path: circle(50%);
+.imagen {
+        width: 35vh;
 }
 
 .tarjeta:hover {
-        background-color: #080808;
+        background-color: #ffffff;
         color: #fff8f8;
 }
 
@@ -35,13 +35,13 @@
 }
 
 .titulo1 {
-        font-size: 18px;
+        font-size: 15px;
         color: #333; 
         margin-bottom: 15px;
 }
 
 .tarjeta:hover .titulo1 {
-        color: #fff;}
+        color: #020202;}
 
 .titulo2 {
         font-size: 15px;
@@ -51,5 +51,5 @@
 }
 
 .tarjeta:hover .titulo2 {
-        color: #fff;}
+        color: #292727;}
 
