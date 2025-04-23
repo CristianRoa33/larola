@@ -6,8 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router";
 import styles from "./NavBar.module.css"
 
-
-
     function NavBar () {
         return (
             <Navbar className={styles.Navbar}>

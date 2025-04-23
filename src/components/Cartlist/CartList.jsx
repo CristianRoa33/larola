@@ -1,6 +1,5 @@
 import CartItem from "../CartItem/CartItem"
 
-
 function CartList ({cart}){
     return (
         <div>

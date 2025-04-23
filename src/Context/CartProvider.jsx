@@ -9,7 +9,10 @@ function CartProvider({ children }) {
         const newCart = cart.filter(prod => prod.id !== id)
         setCart(newCart)
     }
-    const addProduct = product => setCart ([...cart, product])
+    const addProduct = product => {setCart ([...cart, product])
+        
+    }
+
     const cantidadproductos = () => {
     const cantidades = cart.map (prod=> prod.Cantidad)
     const cantidadtotal = cantidades.reduce((acc, curr) => acc + curr, 0)

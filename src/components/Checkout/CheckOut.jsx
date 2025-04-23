@@ -38,7 +38,6 @@ function Checkout() {
     }
 }
 
-
 return (
     <div className={style.checkout}>
       <h2 className={style.Titulo}>Formulario</h2>

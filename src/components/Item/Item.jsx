@@ -3,9 +3,6 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router';
 import styles from "./Item.module.css"
 
-
-
-
 function Item ({item}) {
     return (
         <div className={styles.tarjeta}>
