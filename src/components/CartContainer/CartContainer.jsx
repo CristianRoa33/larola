@@ -1,27 +1,22 @@
 import { useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
 import styles from "./CartContainer.module.css";
+import { useNavigate } from 'react-router';
+import CartList from '../Cartlist/CartList';
 
 
 function CartContainer () {
-    const {cart} = useContext(CartContext)
-    const {cantidadproductos} = useContext(CartContext)
+    const {cart , getTotal} = useContext(CartContext)
+    const navigate = useNavigate()
     if (cart.length === 0) {
         return <h2 className= {styles.vacio}>Tu Carrito Está Vacío</h2>
     }
     return (    
-        <ul className={styles.cartContainer}>
-            {cart.map ((prod)=>(
-                <li key={prod.id} className={styles.cart}>
-                    <img src={prod.imagen} className={styles.imagen} alt={prod.thumbnail}/>
-                    <h1 className={styles.Titulo}>{prod.Titulo}</h1>
-                    <p className={styles.Categoria}>{prod.Categoria}</p>
-                    <h3 className={styles.Precio}>${prod.Precio}</h3>
-                    <span>{cantidadproductos()}{prod.cantidad}</span>
-                    <button className={styles.eliminar}>Eliminar</button>
-                </li>
-            ))}
-        </ul>
+        <div className={styles.cartContainer}>
+            <CartList cart={cart}/>
+            <h2 className={styles.total}>Total:${getTotal()}</h2>
+            <button  className= {styles.Checkout} onClick={() => navigate('/checkout')}> Ir al Checkout </button> 
+        </div>
     )
 }
 

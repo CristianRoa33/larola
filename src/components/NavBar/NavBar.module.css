@@ -16,7 +16,7 @@ box-shadow: 0 15px 25px rgba(31, 157, 161, 0.74);
 }
 
 .links {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 100;
     display: flex;
@@ -24,11 +24,11 @@ box-shadow: 0 15px 25px rgba(31, 157, 161, 0.74);
     color: #f5f6f7;
     text-decoration: none;
     margin: 1px;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .larola {
-    width: 30%;
+    width: 35%;
     margin: 3px 80px;
     border-radius: 50%;
     mask-image: linear-gradient(#0E2130 80% , transparent 100%) ;

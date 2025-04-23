@@ -1,12 +1,31 @@
-# React + Vite
+# 🛍️ React eCommerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web de eCommerce desarrollada con React. Permite a los usuarios explorar una lista de productos, filtrarlos por categoría, ver detalles individuales, añadirlos al carrito y finalizar una compra generando una orden.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- 📦 Lista de productos
+- 🔍 Filtro por categoría
+- 📝 Detalle de producto
+- 🛒 Carrito de compras
+- ✅ Generación de orden de compra
+- 🚀 Animaciones y notificaciones amigables
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologías y dependencias
+
+Este proyecto utiliza las siguientes tecnologías y librerías:
+
+- [React](https://reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [React Router](https://reactrouter.com/)
+- [Firebase](https://firebase.google.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [SweetAlert2](https://sweetalert2.github.io/)
+- [SweetAlert2 React Content](https://github.com/sweetalert2/sweetalert2-react-content)
+- [Animate.css](https://animate.style/)
+
+---

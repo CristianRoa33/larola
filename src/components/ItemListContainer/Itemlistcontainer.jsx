@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/itemList';
 import { getproductos , filtrarCategoria } from '../../Firebase/Db';
 
-
-
 function ItemListContainer() {
     const [Productos, setProductos] = useState([]); 
     const{producto} = useParams();
@@ -18,6 +16,7 @@ useEffect(() => {
         .then (data=> setProductos(data))
     }
 },[producto]);
+
 return (
     <ItemList  Productos={Productos} />
 );

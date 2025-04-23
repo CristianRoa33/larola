@@ -1,68 +1,33 @@
 .cartContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px; 
-}
-.cart {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    gap: 5px;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    backdrop-filter: blur(5px); 
-    border-radius: 10px; 
-    text-align: center;
-    border: 1px solid rgba(68, 66, 66, 0.158);
-    box-shadow: 0 4px 6px rgba(161, 158, 158, 0.1); 
-    width: 450px;
-    margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
-    list-style: non
 }
-.Titulo {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-family: 'Roboto', sans-serif;
-}
+
 .Categoria {
-    font-size: 16px;
+    font-size: 1px;
     font-weight: bold;
     margin-bottom: 8px;
     margin: 10px;
     color: #5a6161;
 }
-.Precio {
-    font-size: 18px;
+.total {
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 8px;
-    margin: 10px;
+    margin: 1.5rem 60rem;
     color: #030c0c;
 }
-.imagen {
-    width: 50%;
-    margin: 50px;
-}
 
-.eliminar {
-    width: 50%;
+.Checkout {
+    font-family: 'Roboto', sans-serif;
     margin:10px;
     cursor: pointer;
     border-radius: 7px;
     border: 1px solid rgba(10, 10, 10, 0.158);
-}
-
-.eliminar:hover {
-    background-color: #31A2B6;
-    color: #fff;
-}
-
-.vacio {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    margin: 50px 0 0 50px;
+    font-weight: 500;
     text-decoration: underline;
+    width: 50rem;
+    margin: 2rem 38rem;
 }

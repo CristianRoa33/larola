@@ -1,0 +1,47 @@
+.imagen {
+    width: 25%;
+    margin: 5px;
+}
+
+.Titulo {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px); 
+    border-radius: 10px; 
+    text-align: center;
+    border: 1px solid rgba(68, 66, 66, 0.158);
+    box-shadow: 0 4px 6px rgba(161, 158, 158, 0.1); 
+    width: 450px;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 2.5rem 50rem  ;
+    font-size: 15px;
+}
+
+.eliminar {
+    font-family: 'Roboto', sans-serif;
+    margin:10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid rgba(10, 10, 10, 0.158);
+    font-weight: 500;
+}
+
+.eliminar:hover {
+    background-color: #31A2B6;
+    color: #fff;
+    border: 2px solid rgba(10, 10, 10, 0.158);
+}

@@ -17,7 +17,7 @@ function ItemCount ( {product}) {
             <p>{count}</p> 
             <button onClick={handleAdd}>+</button>
             <button onClick={handleAddProduct}>Agregar al Carrito</button> 
-            <button onClick={handleSub}>-</button>
+            <button onClick={handleSub}disabled={count===1}>-</button>
         </div>
         )
     }
