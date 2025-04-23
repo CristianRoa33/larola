@@ -31,3 +31,11 @@
     width: 50rem;
     margin: 2rem 38rem;
 }
+
+.vacio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px ;
+    text-decoration: underline;
+}
