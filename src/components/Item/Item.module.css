@@ -1,0 +1,55 @@
+
+.tarjeta {
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(5px); 
+        border-radius: 10px; 
+        padding: 20px;
+        text-align: center;
+        border: 1px solid rgba(68, 66, 66, 0.158); 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+}
+
+.imagen {
+        width: 35vh;
+}
+
+.tarjeta:hover {
+        background-color: #ffffff;
+        color: #fff8f8;
+}
+
+.tarjeta .Button {
+        width: 50%;
+        margin:10px;
+        cursor: pointer;
+}
+
+.tarjeta:hover .Button {
+        background-color: #31A2B6;
+        color: #fff;}
+
+.bodycard {
+        margin: 10px;
+}
+
+.titulo1 {
+        font-size: 15px;
+        color: #333; 
+        margin-bottom: 15px;
+}
+
+.tarjeta:hover .titulo1 {
+        color: #020202;}
+
+.titulo2 {
+        font-size: 15px;
+        color: #555; 
+        margin-bottom: 10px; 
+        text-align: center;
+}
+
+.tarjeta:hover .titulo2 {
+        color: #292727;}
+

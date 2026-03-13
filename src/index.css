@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(0, 0%, 100%) 0, transparent 55%), 
+        radial-gradient(at 82% 65%, hsl(0, 0%, 100%) 0, transparent 100%);
+}
+

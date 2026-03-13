@@ -1,0 +1,41 @@
+.cartContainer {
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    align-items: center;
+}
+
+.Categoria {
+    font-size: 1px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin: 10px;
+    color: #5a6161;
+}
+.total {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin: 1.5rem 60rem;
+    color: #030c0c;
+}
+
+.Checkout {
+    font-family: 'Roboto', sans-serif;
+    margin:10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid rgba(10, 10, 10, 0.158);
+    font-weight: 500;
+    text-decoration: underline;
+    width: 50rem;
+    margin: 2rem 38rem;
+}
+
+.vacio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px ;
+    text-decoration: underline;
+}
