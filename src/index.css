@@ -1,12 +1,70 @@
+@import './styles/variables.css';
+@import './styles/responsive.css';
+
+/* Reset global - Mobile First */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #111927;
-    background-image: 
-        radial-gradient(at 47% 33%, hsl(0, 0%, 100%) 0, transparent 55%), 
-        radial-gradient(at 82% 65%, hsl(0, 0%, 100%) 0, transparent 100%);
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  background-image: 
+    radial-gradient(at 47% 33%, hsl(0, 0%, 100%) 0, transparent 55%), 
+    radial-gradient(at 82% 65%, hsl(0, 0%, 100%) 0, transparent 100%);
+  font-family: var(--font-family-primary);
+  color: var(--color-gray-800);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Prevenir scroll horizontal */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bootstrap overrides */
+.container {
+  padding-left: var(--spacing-sm) !important;
+  padding-right: var(--spacing-sm) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.navbar {
+  padding: 0 !important;
+  background-color: var(--color-secondary) !important;
+}
+
+/* Links sin Bootstrap */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scroll behavior suave */
+html {
+  scroll-behavior: smooth;
 }
 

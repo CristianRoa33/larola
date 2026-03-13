@@ -1,16 +1,88 @@
-.container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px; 
-    margin: 50px 100px ;
-    padding: 20px;  
-    width: 18rem;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-sm);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .titulo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    margin: 50px 0 0 50px;
-    text-decoration: underline;
+  grid-column: 1 / -1;
+  font-size: clamp(2rem, 8vw, 3rem);
+  text-align: center;
+  margin: var(--spacing-lg) var(--spacing-sm);
+  color: var(--color-gray-900);
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
+/* Mobile (< 480px) */
+@media (max-width: 479px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs);
+  }
+
+  .titulo {
+    margin: var(--spacing-sm);
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+}
+
+/* Tablet (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+  }
+
+  .titulo {
+    margin: var(--spacing-md);
+  }
+}
+
+/* Tablet grande (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md);
+  }
+
+  .titulo {
+    margin: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+/* Desktop (1024px - 1280px) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+    padding: var(--spacing-lg);
+  }
+
+  .titulo {
+    margin: var(--spacing-2xl) var(--spacing-lg);
+  }
+}
+
+/* Desktop grande (> 1280px) */
+@media (min-width: 1281px) {
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-2xl);
+  }
+
+  .titulo {
+    margin: var(--spacing-3xl) var(--spacing-2xl);
+  }
 }

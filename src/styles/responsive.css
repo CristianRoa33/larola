@@ -1,0 +1,171 @@
+/* ============================================
+   RESPONSIVE FIXES Y OVERRIDES DE BOOTSTRAP
+   ============================================ */
+
+/* Asegurar que el viewport sea 100% */
+html, body {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#root {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  display: block !important;
+}
+
+/* Bootstrap Container Override */
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: var(--spacing-sm, 1rem) !important;
+  padding-right: var(--spacing-sm, 1rem) !important;
+  overflow-x: hidden !important;
+}
+
+/* Bootstrap Navbar Override COMPLETO */
+nav.navbar {
+  width: 100% !important;
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.navbar-brand {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-grow: 0 !important;
+}
+
+.navbar-collapse {
+  width: 100% !important;
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.navbar-nav {
+  width: 100% !important;
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav-item {
+  display: flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav-link {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+/* Bootstrap Row/Col Override */
+.row {
+  width: 100% !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+/* Imágenes ajustables */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+/* Prevenir scroll innecesario */
+body {
+  overflow-x: hidden !important;
+}
+
+/* Form Controls */
+.form-control, .form-select, input, textarea, select {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+}
+
+/* Breakpoints responsive base */
+@media (max-width: 479px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: var(--spacing-xs, 0.5rem) !important;
+    padding-right: var(--spacing-xs, 0.5rem) !important;
+  }
+
+  .navbar {
+    flex-direction: column !important;
+  }
+
+  .navbar-collapse {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: var(--spacing-sm, 1rem) !important;
+    padding-right: var(--spacing-sm, 1rem) !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: var(--spacing-md, 1.5rem) !important;
+    padding-right: var(--spacing-md, 1.5rem) !important;
+  }
+
+  .navbar {
+    flex-direction: row !important;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: var(--spacing-lg, 2rem) !important;
+    padding-right: var(--spacing-lg, 2rem) !important;
+  }
+}
+
+/* Universal Box-sizing */
+* {
+  box-sizing: border-box !important;
+}
+
+/* Disable Bootstrap Gutter */
+.gx-0, .gy-0 {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}

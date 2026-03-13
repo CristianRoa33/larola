@@ -1,55 +1,95 @@
 
 .tarjeta {
-        font-family: 'Roboto', sans-serif;
-        background-color: rgb(255, 255, 255);
-        backdrop-filter: blur(5px); 
-        border-radius: 10px; 
-        padding: 20px;
-        text-align: center;
-        border: 1px solid rgba(68, 66, 66, 0.158); 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
+  background-color: var(--color-white);
+  backdrop-filter: blur(5px);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  text-align: center;
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .imagen {
-        width: 35vh;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: var(--spacing-xs);
 }
 
 .tarjeta:hover {
-        background-color: #ffffff;
-        color: #fff8f8;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 .tarjeta .Button {
-        width: 50%;
-        margin:10px;
-        cursor: pointer;
+  width: 100%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  margin: var(--spacing-xs) 0 0 0;
+  cursor: pointer;
+  margin-top: auto;
 }
 
 .tarjeta:hover .Button {
-        background-color: #31A2B6;
-        color: #fff;}
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
 
 .bodycard {
-        margin: 10px;
+  margin: var(--spacing-xs);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
 }
 
 .titulo1 {
-        font-size: 15px;
-        color: #333; 
-        margin-bottom: 15px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--color-gray-600);
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  text-transform: capitalize;
 }
 
 .tarjeta:hover .titulo1 {
-        color: #020202;}
+  color: var(--color-black);
+}
 
 .titulo2 {
-        font-size: 15px;
-        color: #555; 
-        margin-bottom: 10px; 
-        text-align: center;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--color-gray-600);
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .tarjeta:hover .titulo2 {
-        color: #292727;}
+  color: var(--color-gray-800);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .tarjeta {
+    padding: var(--spacing-xs);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tarjeta {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .tarjeta {
+    padding: var(--spacing-md);
+  }
+}
 

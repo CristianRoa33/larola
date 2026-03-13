@@ -1,40 +1,268 @@
 .Navbar {
-display: flex;
-justify-content: space-between;
-font-family: 'Roboto', sans-serif;
-align-items: center;
-width: 100%;
-height: 11vh;
-background-color: #020202;
-border: 1px solid #000000;
-font-family: "Roboto", sans-serif;
-font-size: 60x;
-backdrop-filter: blur(1px) saturate(200%);
-position: relative;
-margin: 0px;
-box-shadow: 0 15px 25px rgba(31, 157, 161, 0.74);
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  height: auto !important;
+  min-height: clamp(50px, 15vh, 120px) !important;
+  background-color: var(--color-secondary) !important;
+  border: var(--border-width) solid var(--color-black) !important;
+  backdrop-filter: blur(1px) saturate(200%) !important;
+  position: relative !important;
+  box-shadow: var(--shadow-primary) !important;
+  padding: clamp(0.5rem, 2vw, 1.5rem) clamp(0.5rem, 3vw, 2rem) !important;
+  gap: clamp(0.5rem, 3vw, 2rem) !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
 }
 
-.links {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 100;
-    display: flex;
-    gap: 1px;
-    color: #f5f6f7;
-    text-decoration: none;
-    margin: 1px;
-    margin-left: 80px;
+.logoContainer {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  height: 100% !important;
+  margin-right: auto !important;
 }
 
 .larola {
-    width: 35%;
-    margin: 3px 80px;
-    border-radius: 50%;
-    mask-image: linear-gradient(#0E2130 80% , transparent 100%) ;
-    opacity: 0.8;
+  width: clamp(40px, 8vw, 80px) !important;
+  height: clamp(40px, 8vw, 80px) !important;
+  border-radius: 50% !important;
+  mask-image: linear-gradient(#0E2130 80%, transparent 100%) !important;
+  opacity: 0.8 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+}
+
+.navLinksContainer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: clamp(0.75rem, 1.5vw, 2rem) !important;
+  flex-wrap: nowrap !important;
+}
+
+.links {
+  font-size: clamp(0.65rem, 1.5vw, 1.125rem) !important;
+  text-transform: uppercase !important;
+  font-weight: var(--font-weight-light) !important;
+  display: inline-flex !important;
+  color: var(--color-gray-50) !important;
+  text-decoration: none !important;
+  transition: all var(--transition-base) !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  padding: clamp(0.25rem, 1vw, 0.75rem) clamp(0.5rem, 1vw, 1rem) !important;
+  border-radius: var(--radius-sm) !important;
+  letter-spacing: clamp(0.5px, 0.1vw, 1px) !important;
 }
 
 .links:hover {
-    color: #31A2B6;
+  color: var(--color-primary) !important;
+  background-color: rgba(49, 162, 182, 0.1) !important;
+}
+
+.links:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(49, 162, 182, 0.2) !important;
+}
+
+.cartWidgetContainer {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  margin-left: auto !important;
+}
+
+.hamburgerButton {
+  display: none !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: clamp(0.25rem, 1vw, 0.5rem) !important;
+  transition: all var(--transition-base) !important;
+  flex-shrink: 0 !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: clamp(0.35rem, 0.8vw, 0.5rem) !important;
+}
+
+.hamburgerButton span {
+  width: clamp(1.5rem, 4vw, 2rem) !important;
+  height: 3px !important;
+  background-color: var(--color-gray-50) !important;
+  border-radius: var(--radius-full) !important;
+  transition: all var(--transition-base) !important;
+  display: block !important;
+}
+
+.hamburgerButton:hover span {
+  background-color: var(--color-primary) !important;
+}
+
+.mobileMenu {
+  display: none !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-color: var(--color-secondary) !important;
+  border-top: var(--border-width) solid var(--color-black) !important;
+  padding: clamp(0.5rem, 2vw, 1rem) !important;
+  flex-direction: column !important;
+  gap: clamp(0.5rem, 1vw, 0.75rem) !important;
+  z-index: 1000 !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.mobileMenu.active {
+  display: flex !important;
+}
+
+.mobileMenuLink {
+  font-size: clamp(0.85rem, 2vw, 1rem) !important;
+  text-transform: uppercase !important;
+  font-weight: var(--font-weight-light) !important;
+  color: var(--color-gray-50) !important;
+  text-decoration: none !important;
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all var(--transition-base) !important;
+  display: block !important;
+}
+
+.mobileMenuLink:hover {
+  background-color: rgba(49, 162, 182, 0.1) !important;
+  color: var(--color-primary) !important;
+}
+
+/* Desktop (> 750px) - Mostrar navegación normal */
+@media (min-width: 750px) {
+  .hamburgerButton {
+    display: none !important;
+  }
+
+  .navLinksContainer {
+    display: flex !important;
+  }
+
+  .mobileMenu {
+    display: none !important;
+  }
+
+  .mobileMenu.active {
+    display: none !important;
+  }
+}
+
+/* Mobile/Tablet pequeño (< 750px) - Mostrar hamburguesa */
+@media (max-width: 749px) {
+  .Navbar {
+    justify-content: center !important;
+    min-height: clamp(50px, 12vh, 80px) !important;
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(0.5rem, 2vw, 1rem) !important;
+    position: relative !important;
+  }
+
+  .logoContainer {
+    margin-right: 0 !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .navLinksContainer {
+    display: none !important;
+  }
+
+  .hamburgerButton {
+    display: flex !important;
+    position: absolute !important;
+    right: clamp(0.5rem, 2vw, 1rem) !important;
+    margin-left: 0 !important;
+  }
+
+  .cartWidgetContainer {
+    display: none !important;
+  }
+
+  .larola {
+    width: clamp(35px, 8vw, 60px) !important;
+    height: clamp(35px, 8vw, 60px) !important;
+  }
+}
+
+/* Tablet (480px - 749px) */
+@media (min-width: 480px) and (max-width: 749px) {
+  .Navbar {
+    min-height: clamp(60px, 14vh, 90px) !important;
+    padding: clamp(0.75rem, 2vw, 1.25rem) clamp(0.75rem, 2vw, 1.25rem) !important;
+  }
+
+  .larola {
+    width: clamp(45px, 10vw, 70px) !important;
+    height: clamp(45px, 10vw, 70px) !important;
+  }
+
+  .hamburgerButton {
+    font-size: clamp(1.3rem, 3vw, 1.6rem) !important;
+  }
+}
+
+/* Desktop (750px - 1023px) */
+@media (min-width: 750px) and (max-width: 1023px) {
+  .Navbar {
+    min-height: clamp(70px, 15vh, 110px) !important;
+    padding: clamp(0.75rem, 2vw, 1.5rem) clamp(1rem, 3vw, 1.5rem) !important;
+  }
+
+  .larola {
+    width: clamp(50px, 10vw, 90px) !important;
+    height: clamp(50px, 10vw, 90px) !important;
+  }
+
+  .links {
+    font-size: clamp(0.8rem, 1.6vw, 1rem) !important;
+    padding: clamp(0.4rem, 1vw, 0.75rem) clamp(0.75rem, 1.2vw, 1rem) !important;
+  }
+}
+
+/* Desktop grande (1024px - 1280px) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .Navbar {
+    min-height: clamp(80px, 12vh, 120px) !important;
+    padding: clamp(1rem, 2vw, 2rem) clamp(1.5rem, 3vw, 2.5rem) !important;
+  }
+
+  .larola {
+    width: clamp(60px, 12vw, 100px) !important;
+    height: clamp(60px, 12vw, 100px) !important;
+  }
+
+  .links {
+    font-size: clamp(0.9rem, 1.8vw, 1.125rem) !important;
+    padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.75rem, 1.5vw, 1.25rem) !important;
+  }
+}
+
+/* Desktop máximo (> 1280px) */
+@media (min-width: 1281px) {
+  .Navbar {
+    min-height: clamp(90px, 13vh, 140px) !important;
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(2rem, 4vw, 3rem) !important;
+  }
+
+  .larola {
+    width: clamp(70px, 15vw, 120px) !important;
+    height: clamp(70px, 15vw, 120px) !important;
+  }
+
+  .links {
+    font-size: clamp(1rem, 2vw, 1.25rem) !important;
+    padding: clamp(0.6rem, 1.2vw, 1rem) clamp(1rem, 2vw, 1.5rem) !important;
+  }
 }

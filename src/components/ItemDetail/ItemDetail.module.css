@@ -1,51 +1,76 @@
 .container {
-    background-color: rgb(255, 255, 255);
-    backdrop-filter: blur(5px); 
-    border-radius: 10px; 
-    padding: 20px;
-    text-align: center;
-    border: 1px solid rgba(68, 66, 66, 0.158);
-    box-shadow: 0 4px 6px rgba(161, 158, 158, 0.1); 
-    width: 450px;
-    margin-left: 45rem;
-    margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
+  background-color: var(--color-white);
+  backdrop-filter: blur(5px);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  text-align: center;
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 500px;
+  margin: var(--spacing-lg) auto;
 }
 
 .imagen {
-    width: 90%;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    margin-right: 10px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: var(--spacing-sm);
+  border-radius: var(--radius-sm);
 }
+
 .container h1 {
-    font-size: 20px; 
-    color: #080808; 
-    margin: 10px 0; 
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: var(--color-gray-900);
+  margin: var(--spacing-xs) 0;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .container h2 {
-    font-size: 20px; 
-    color: #000000; 
-    margin: 10px 0;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: var(--color-primary);
+  margin: var(--spacing-xs) 0;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
 }
 
 .container h3 {
-    font-size: 13px; 
-    color: #615c5c; 
-    margin: 10px 0; 
-    font-weight: 400;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--color-gray-500);
+  margin: var(--spacing-xs) 0;
+  font-weight: var(--font-weight-normal);
 }
 
 .container p {
-    font-size: 15px; 
-    color: #464545; 
-    margin: 10px 0; 
-    font-weight: 600;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--color-gray-700);
+  margin: var(--spacing-xs) 0;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: var(--spacing-xs);
+    margin: var(--spacing-md) auto;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: var(--spacing-md);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 700px;
+    padding: var(--spacing-lg);
+  }
 }
