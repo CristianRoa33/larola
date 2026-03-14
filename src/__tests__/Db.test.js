@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { getproductos, filtrarCategoria, getProducto } from '../Firebase/Db';
 
 describe('Funciones de Firestore', () => {
