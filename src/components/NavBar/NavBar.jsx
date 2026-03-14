@@ -52,7 +52,7 @@ function NavBar() {
 
       {/* Hamburger Button - Mobile */}
       <button
-        className={styles.hamburgerButton}
+        className={`${styles.hamburgerButton} ${isMenuOpen ? styles.active : ""}`}
         onClick={toggleMenu}
         aria-label="Toggle navigation menu"
         aria-expanded={isMenuOpen}
